@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
+set -e
 
-echo HELLO WORLD 2
-
-echo "$HELLO"
-echo "$BYE"
-
-nix-shell -p hello --run 'hello'
+nix-shell --run 'install-spago-pkgs' -j 20
+nix-shell --run 'build-purs'
