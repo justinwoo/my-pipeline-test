@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 echo HELLO WORLD 2
 
 echo "$HELLO"
